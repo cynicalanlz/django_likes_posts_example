@@ -1,0 +1,9 @@
+django==1.11.16
+djangorestframework
+markdown
+django-filter
+email-hunter-python
+clearbit
+djangorestframework-jwt
+psycopg2-binary
+dry-rest-permissions

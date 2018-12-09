@@ -1,0 +1,10 @@
+import uuid
+from django.db import models
+from django.contrib.auth.models import User
+from core.models import BasePermissionsModel
+
+
+class Post(BasePermissionsModel):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
+    user = models.ForeignKey(User)
+    text = models.TextField()
