@@ -7,3 +7,5 @@ clearbit
 djangorestframework-jwt
 psycopg2-binary
 dry-rest-permissions
+django-allauth
+lorem

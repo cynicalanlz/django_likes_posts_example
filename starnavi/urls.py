@@ -31,6 +31,7 @@ router.register(r'posts', PostsViewSet)
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api-token-auth/', obtain_jwt_token),
+    url(r'^signup_json/$', core_views.SignUpView.as_view(), name='signup_json'),
     url(r'^$', core_views.front, name='front'),
     url(r'^signup/$', core_views.signup, name='core_signup'),
     url(r'^login/$', auth_views.login,
